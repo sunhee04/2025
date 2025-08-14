@@ -8,20 +8,20 @@ st.set_page_config(page_title="MBTI 음식 추천", page_icon="🍜", layout="ce
 # --------------------------
 food_data = {
     "ENFP": [
-        {"name": "타코 🌮", "desc": "당신처럼 자유롭고 화려한 맛!", "img": "https://picsum.photos/seed/enfp1/400/300"},
-        {"name": "망고 빙수 🍧", "desc": "시원하고 달콤한 당신에게 딱!", "img": "https://picsum.photos/seed/enfp2/400/300"}
+        {"name": "타코 🌮", "desc": "당신처럼 자유롭고 화려한 맛!"},
+        {"name": "망고 빙수 🍧", "desc": "시원하고 달콤한 당신에게 딱!"}
     ],
     "ENTP": [
-        {"name": "핫도그 🌭", "desc": "아이디어처럼 휘리릭 만들 수 있는 간식!", "img": "https://picsum.photos/seed/entp1/400/300"},
-        {"name": "불닭볶음면 🔥", "desc": "도전 정신을 불태우는 매운맛!", "img": "https://picsum.photos/seed/entp2/400/300"}
+        {"name": "핫도그 🌭", "desc": "아이디어처럼 휘리릭 만들 수 있는 간식!"},
+        {"name": "불닭볶음면 🔥", "desc": "도전 정신을 불태우는 매운맛!"}
     ],
     "ENFJ": [
-        {"name": "샐러드 🥗", "desc": "모두를 챙기는 따뜻한 마음처럼 건강한 맛", "img": "https://picsum.photos/seed/enfj1/400/300"},
-        {"name": "치즈케이크 🍰", "desc": "부드럽고 달콤하게 사람을 사로잡는 맛", "img": "https://picsum.photos/seed/enfj2/400/300"}
+        {"name": "샐러드 🥗", "desc": "모두를 챙기는 따뜻한 마음처럼 건강한 맛"},
+        {"name": "치즈케이크 🍰", "desc": "부드럽고 달콤하게 사람을 사로잡는 맛"}
     ],
     "ENTJ": [
-        {"name": "스테이크 🥩", "desc": "강한 추진력처럼 묵직한 맛", "img": "https://picsum.photos/seed/entj1/400/300"},
-        {"name": "에스프레소 ☕", "desc": "짧고 강렬한 리더십의 맛", "img": "https://picsum.photos/seed/entj2/400/300"}
+        {"name": "스테이크 🥩", "desc": "강한 추진력처럼 묵직한 맛"},
+        {"name": "에스프레소 ☕", "desc": "짧고 강렬한 리더십의 맛"}
     ],
     "INFJ": [
         {"name": "허브티 🍵", "desc": "조용히 마음을 달래주는 따뜻함", "img": "https://picsum.photos/seed/infj1/400/300"},
