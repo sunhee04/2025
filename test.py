@@ -3,7 +3,7 @@ import streamlit as st
 st.title("Daily Fortune & Exam Score Predictor")
 
 name = st.text_input("Enter your name:")
-birth = st.date_input("Enter your birth date:")
+birth = st.date_input("Enter your birth date:", min_value=datetime.date(1800,1,1), max_value=datetime.date(2035,12,31))
 mood = st.selectbox("How do you feel today?", ["😄 Happy", "😐 Okay", "😢 Sad", "😡 Angry", "😴 Tired"])
 
 if st.button("Get My Fortune!"):
