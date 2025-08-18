@@ -76,7 +76,7 @@ if st.button("🔮 운세 보기"):
         st.subheader("📜 오늘의 명언")
         st.write(random.choice(quotes))
 
-        st.subheader("✅ 오늘의 할 일 (작지만 기분 좋아지는 일)")
+        st.subheader("✅ 오늘의 할 일")
         st.write(random.choice(todos))
 
         st.write(f"현재 기분인 **{mood}**(으)로 시작한 오늘, {random.choice(closing_messages)}")
