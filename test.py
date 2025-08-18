@@ -2,7 +2,7 @@ import streamlit as st
 import datetime
 import random
 
-st.title("오늘의 운세 & 명언 봇 🎉")
+st.title("오늘의 운세🎉")
 
 # 이름 입력
 name = st.text_input("이름을 입력하세요")
@@ -46,6 +46,19 @@ if st.button("🔮 운세 보기"):
             "지금의 당신도 충분히 빛나고 있다."
         ]
 
+        todos = [
+            "물 한 잔 더 마시기 💧",
+            "하늘 한 번 올려다보기 ☁️",
+            "거울 보면서 한 번 웃어보기 🙂",
+            "‘괜찮아’ 라는 말을 스스로에게 한 번 해주기",
+            "오늘 고마운 사람 한 명 떠올려 보기",
+            "커피 대신 따뜻한 차 한 모금 마셔보기 🍵",
+            "눈 감고 깊게 숨 한 번 들이쉬기",
+            "오늘 하고 싶은 작은 일 하나 바로 시작해보기",
+            "하루에 한 번 나에게 ‘수고했어’ 라고 말해보기",
+            "하루 중 1분만 아무 생각 없이 멍― 때려보기"
+        ]
+
         closing_messages = [
             "멋진 하루 보내세요!",
             "행운이 가득한 하루 되시길 바랍니다 😊",
@@ -62,6 +75,9 @@ if st.button("🔮 운세 보기"):
 
         st.subheader("📜 오늘의 명언")
         st.write(random.choice(quotes))
+
+        st.subheader("✅ 오늘의 할 일 (작지만 기분 좋아지는 일)")
+        st.write(random.choice(todos))
 
         st.write(f"현재 기분인 **{mood}**(으)로 시작한 오늘, {random.choice(closing_messages)}")
     else:
