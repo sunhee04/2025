@@ -1,16 +1,16 @@
-import streamlit as st
+import streamlit as st 
 import datetime
 import random
 
-st.title("오늘의 운세🎉")
+st.title("오늘의 운세 & 명언 & 할 일 추천기 🎉")
 
 # 이름 입력
 name = st.text_input("이름을 입력하세요")
 
 # 생년월일 입력 (1900년 ~ 2035년, 기본값 없음)
-birthdate = st.date_input(
+birthdate_placeholder = st.empty()
+birthdate = birthdate_placeholder.date_input(
     "생년월일을 선택하세요",
-    value=None,
     min_value=datetime.date(1900, 1, 1),
     max_value=datetime.date(2035, 12, 31),
 )
