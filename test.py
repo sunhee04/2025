@@ -2,7 +2,7 @@ import streamlit as st
 import datetime
 import random
 
-st.title("오늘의 운세 & 명언 & 할 일 추천기 🎉")
+st.title("오늘의 운세🎉")
 
 # 이름 입력
 name = st.text_input("이름을 입력하세요")
