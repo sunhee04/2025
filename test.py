@@ -2,7 +2,7 @@ import streamlit as st
 import datetime
 import random
 
-st.title("오늘의 운세 & 명언 & 할 일 추천기 🎉")
+st.title("오늘의 운세🎉")
 
 # 이름 입력
 name = st.text_input("이름을 입력하세요")
@@ -77,7 +77,7 @@ if st.button("🔮 운세 보기"):
         st.subheader("📜 오늘의 명언")
         st.write(random.choice(quotes))
 
-        st.subheader("✅ 오늘의 할 일 (작지만 기분 좋아지는 일)")
+        st.subheader("✅ 오늘의 할 일")
         st.write(random.choice(todos))
 
         st.write(f"현재 기분인 **{mood}**(으)로 시작한 오늘, {random.choice(closing_messages)}")
