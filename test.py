@@ -1,4 +1,4 @@
-import streamlit as st 
+import streamlit as st
 import datetime
 import random
 
@@ -8,9 +8,9 @@ st.title("오늘의 운세🎉")
 name = st.text_input("이름을 입력하세요")
 
 # 생년월일 입력 (1900년 ~ 2035년, 기본값 없음)
-birthdate_placeholder = st.empty()
-birthdate = birthdate_placeholder.date_input(
+birthdate = st.date_input(
     "생년월일을 선택하세요",
+    value=None,
     min_value=datetime.date(1900, 1, 1),
     max_value=datetime.date(2035, 12, 31),
 )
@@ -77,7 +77,7 @@ if st.button("🔮 운세 보기"):
         st.subheader("📜 오늘의 명언")
         st.write(random.choice(quotes))
 
-        st.subheader("✅ 오늘의 할 일")
+        st.subheader("✅ 오늘의 할 일 (작지만 기분 좋아지는 일)")
         st.write(random.choice(todos))
 
         st.write(f"현재 기분인 **{mood}**(으)로 시작한 오늘, {random.choice(closing_messages)}")
